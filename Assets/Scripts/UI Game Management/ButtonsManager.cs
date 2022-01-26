@@ -29,6 +29,7 @@ public class ButtonsManager : MonoBehaviour
     // COMMON: 
     public void ExitApplication()
     {
+        Debug.Log("Quit Application!");
         Application.Quit();
     }
 }
