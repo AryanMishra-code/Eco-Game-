@@ -285,6 +285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressBar: {fileID: 196973266}
+<<<<<<< HEAD
 --- !u!1 &645186853
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +496,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 696279227}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 0a2c4c356f7270d399c80c57dd201b356ffee66c
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
