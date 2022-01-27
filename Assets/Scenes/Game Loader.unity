@@ -272,6 +272,7 @@ GameObject:
   - component: {fileID: 235586906}
   - component: {fileID: 235586908}
   - component: {fileID: 235586907}
+  - component: {fileID: 235586909}
   m_Layer: 5
   m_Name: Loading bar
   m_TagString: Untagged
@@ -337,6 +338,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235586905}
   m_CullTransparentMesh: 1
+--- !u!114 &235586909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235586905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03183f77a942c5f47b8919690ad43879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressBar: {fileID: 1193782495}
 --- !u!1 &782055055
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +725,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.594
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
