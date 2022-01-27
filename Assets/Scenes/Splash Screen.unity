@@ -180,7 +180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: aef26a06fcaa5224bb694223b9adef9a, type: 3}
+  m_Texture: {fileID: 2800000, guid: 6fa05d94c4ce0a44bb7c640889fe3374, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -285,7 +285,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progressBar: {fileID: 196973266}
-  sceneIndex: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
