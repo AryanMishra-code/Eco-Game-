@@ -890,15 +890,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 1599125758}
-  moveSpeed: 12
-  gravity: -9.8
+  walkSpeed: 12
+  runSpeed: 18
+  gravity: -30
   jumpHeight: 3
   groundCheck: {fileID: 1136048681}
   groundDistance: 1
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  isGrounded: 0
 --- !u!1 &2140297822
 GameObject:
   m_ObjectHideFlags: 0
