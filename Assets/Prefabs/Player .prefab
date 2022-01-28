@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerController: {fileID: 6800765706213052446}
-  footstepInterval: 0.5
-  walkSpeed: 12
+  footstepInterval: 1
+  walkSpeed: 4
   runSpeed: 18
   gravity: -30
   jumpHeight: 3

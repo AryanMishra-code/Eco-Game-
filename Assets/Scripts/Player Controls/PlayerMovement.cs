@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     bool _isGrounded;
 
     private float currentSpeed = 0f;
+    private float currentInterval;
     private float timer = 0f;
     private Vector2 input;
     
@@ -42,8 +43,8 @@ public class PlayerMovement : MonoBehaviour
         if (input.sqrMagnitude > 0)
         {
             timer += Time.deltaTime;
-
-            if (timer >= footstepInterval && _isGrounded)
+            currentInterval = currentSpeed == runSpeed ? footstepInterval / 2 : footstepInterval;
+            if (timer >= currentInterval && _isGrounded)
             {
                 AudioManager.instance.Play(SoundName.Move_Ground);
                 timer = 0f;
