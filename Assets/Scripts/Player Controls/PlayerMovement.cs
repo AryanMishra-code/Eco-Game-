@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Audio;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController playerController;
-    
+    public float footstepInterval = 1f;
     public float walkSpeed = 12f;
     public float runSpeed = 18f;
     public float gravity = -9.8f;
@@ -19,6 +20,8 @@ public class PlayerMovement : MonoBehaviour
     bool _isGrounded;
 
     private float currentSpeed = 0f;
+    private float timer = 0f;
+    private Vector2 input;
     
     void Update()
     {
@@ -33,6 +36,19 @@ public class PlayerMovement : MonoBehaviour
         
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
+
+        input = new Vector2(horizontal, vertical);
+
+        if (input.sqrMagnitude > 0)
+        {
+            timer += Time.deltaTime;
+
+            if (timer >= footstepInterval)
+            {
+                AudioManager.instance.Play(SoundName.Move_Ground);
+                timer = 0f;
+            }
+        }
 
         Vector3 direction = transform.right * horizontal + transform.forward * vertical;
 
