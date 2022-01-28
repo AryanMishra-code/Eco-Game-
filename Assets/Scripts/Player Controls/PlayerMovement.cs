@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
         {
             timer += Time.deltaTime;
 
-            if (timer >= footstepInterval)
+            if (timer >= footstepInterval && _isGrounded)
             {
                 AudioManager.instance.Play(SoundName.Move_Ground);
                 timer = 0f;
